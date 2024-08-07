@@ -17,7 +17,23 @@ var FindProxyForURL = function(init, profiles) {
         if (/ipinfo\.io/.test(host)) return "+Ger_Proxy";
         if (/^test\.com$/.test(host)) return "+Ger_Proxy";
         if (/googlevideo\.com/.test(host)) return "+Ger_Proxy";
-        if (/hetzner\.com/.test(host)) return "+Ger_Proxy"
+        if (/hetzner\.com/.test(host)) return "+Ger_Proxy";
+        if (/cisco\.com/.test(host)) return "+Ger_Proxy";
+        if (/cdn\.oaistatic\.com/.test(host)) return "+Ger_Proxy";
+        if (/medium\.com/.test(host)) return "+Ger_Proxy";
+        if (/claude\.ai/.test(host)) return "+Ger_Proxy";
+        if (/anthropic\.com/.test(host)) return "+Ger_Proxy";
+        if (/oaiusercontent\.com/.test(host)) return "+Ger_Proxy";
+        if (/openai\.com/.test(host)) return "+Ger_Proxy";
+        if (/hdrezka/.test(host)) return "+Ger_Proxy";
+        if (/intel\.com/.test(host)) return "+Ger_Proxy";
+        if (/meta\.com/.test(host)) return "+Ger_Proxy";
+        if (/news\.google\.com/.test(host)) return "+Ger_Proxy";
+        if (/ntc\.party/.test(host)) return "+Ger_Proxy";
+        if (/rutracker\.org/.test(host)) return "+Ger_Proxy";
+        if (/terraform\.io/.test(host)) return "+Ger_Proxy";
+        if (/youtube\.com/.test(host)) return "+Ger_Proxy";
+        if (/googleusercontent\.com/.test(host)) return "+Ger_Proxy";
         return "DIRECT";
     },
     "+Ger_Proxy": function(url, host, scheme) {
