@@ -16,6 +16,8 @@ var FindProxyForURL = function(init, profiles) {
         "use strict";
         if (/ipinfo\.io/.test(host)) return "+Ger_Proxy";
         if (/^test\.com$/.test(host)) return "+Ger_Proxy";
+        if (/googlevideo\.com/.test(host)) return "+Ger_Proxy";
+        if (/hetzner\.com/.test(host)) return "+Ger_Proxy"
         return "DIRECT";
     },
     "+Ger_Proxy": function(url, host, scheme) {
