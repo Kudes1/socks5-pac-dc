@@ -16,7 +16,6 @@ var FindProxyForURL = function(init, profiles) {
         "use strict";
         if (/ipinfo\.io/.test(host)) return "+Ger_Proxy";
         if (/^test\.com$/.test(host)) return "+Ger_Proxy";
-        if (/googlevideo\.com/.test(host)) return "+Ger_Proxy";
         if (/hetzner\.com/.test(host)) return "+Ger_Proxy";
         if (/cisco\.com/.test(host)) return "+Ger_Proxy";
         if (/cdn\.oaistatic\.com/.test(host)) return "+Ger_Proxy";
@@ -34,6 +33,11 @@ var FindProxyForURL = function(init, profiles) {
         if (/terraform\.io/.test(host)) return "+Ger_Proxy";
         if (/youtube\.com/.test(host)) return "+Ger_Proxy";
         if (/googleusercontent\.com/.test(host)) return "+Ger_Proxy";
+        if (/googlevideo\.com/.test(host)) return "+Ger_Proxy";
+        if (/youtu\.be/.test(host)) return "+Ger_Proxy";
+        if (/yt3\.ggpth\.com/.test(host)) return "+Ger_Proxy";
+        if (/ytimg\.com/.test(host)) return "+Ger_Proxy";
+        if (/nhacmp3youtube\.com/.test(host)) return "+Ger_Proxy";
         return "DIRECT";
     },
     "+Ger_Proxy": function(url, host, scheme) {
