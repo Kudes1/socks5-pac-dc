@@ -38,6 +38,7 @@ var FindProxyForURL = function(init, profiles) {
         if (/yt3\.ggpth\.com/.test(host)) return "+Ger_Proxy";
         if (/ytimg\.com/.test(host)) return "+Ger_Proxy";
         if (/nhacmp3youtube\.com/.test(host)) return "+Ger_Proxy";
+        if (/chatgpt\.com/.test(host)) return "+Ger_Proxy";
         return "DIRECT";
     },
     "+Ger_Proxy": function(url, host, scheme) {
