@@ -42,6 +42,7 @@ var FindProxyForURL = function(init, profiles) {
         if (/instagram\.com/.test(host)) return "+Ger_Proxy";
         if (/facebook\.com/.test(host)) return "+Ger_Proxy";
         if (/tableau\.com/.test(host)) return "+Ger_Proxy";
+        if (/hashicorp\.com/.test(host)) return "+Ger_Proxy";
         return "DIRECT";
     },
     "+Ger_Proxy": function(url, host, scheme) {
